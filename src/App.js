@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { Component } from "react";
+import ImportIndex from "./ImportIndex";
+// this program is created to learn IMPORT and Export in React.it is an exercise from colt tutotrial its handout(question format) is present in react-bootcamp-materials=>create-react-app=>module-exercise-handout
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ class App extends Component {
+ 
+  render() {
+    const heading={
+     backgroundColor:"#ee9b00",
+     color:"#bb3e03",
+     textTransform:"upperCase",
+     width:"60%",
+     margin:" 12px auto",
+    }
+    return <div className="App">
+      <h1 style={heading}>this program is created to learn IMPORT and Export in React</h1>
+      <ImportIndex/>
+    </div>;
+  }
 }
 
 export default App;
